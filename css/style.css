@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(to right, rgb(93, 211, 136), rgb(39, 185, 217), rgb(54, 88, 212)) no-repeat;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.form-background{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(67, 119, 141);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px;
+    box-shadow: 15px 15px 25px rgba(58, 57, 57, 0.798);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-background .nav{
+    width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.login, .signup{
+    border-radius: 30px;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: +1;
+}
+
+.toggle{
+    background: linear-gradient(to right, rgb(93, 211, 136), rgb(39, 185, 217));
+    position: absolute;
+    border-radius: 30px;
+    left: 5px;
+    bottom: 5px;
+    top: 5px;
+    right: 90px;
+}
+
+form{
+    font-size: 20px;
+    margin-top: 100px;
+    color: white;
+}
+
+label{
+    color: white;
+    display: inline-block;
+}
+
+input{
+    font-size: 18px;
+    outline: none;
+    border: none;
+    line-height: 40px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 395px;
+    background-color: transparent;
+}
+
+input::placeholder{
+    color: white;
+}
+
+#username{
+    margin-bottom: 50px;
+
+}
+
+input:focus{
+    border-bottom: 1px solid rgb(39, 185, 217);
+
+}
+
+.password-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#password:focus > .password-box{
+    border-bottom: 1px solid rgb(39, 185, 217);
+
+}
+
+.visibility-box label{
+    cursor: pointer;
+}
+
+.visibility-box input, .visibility-box label i:first-child{
+    display: none;
+}
+
+.visibility-box{
+    position: absolute;
+    right: 5px;
+}
+
+.remember-password{
+    display: flex;
+    font-size: 18px;
+}
+
+.remember-password input{
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    accent-color: rgb(93, 211, 136);
+}
+
+form button{
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: rgb(93, 211, 136);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover{
+    background: linear-gradient(to right, rgb(93, 211, 136), rgb(39, 185, 217));
+}
+
+#form2 #c-fullname, #form2 #c-username,
+#form2 #c-password{
+    margin-bottom: 30px;
+}
+
+#form1, #form2{
+    position: absolute;
+    color: white;
+}
+
+#form1{
+    left: 50px;
+    transition: left .5s;
+}
+
+#form2{
+    left: 600px;
+    transition: left .5s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(93, 211, 136);
+}
+
+a:hover{
+    color: rgb(39, 185, 217);
+}
